@@ -1,0 +1,24 @@
+.optionsList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.optionsBtn {
+  font-size: 16px;
+  border: none;
+  background-color: orange;
+  color: black;
+  width: 80px;
+  height: 40px;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.optionsBtn:hover {
+  color: #fff;
+  background: rgb(9, 126, 54);
+}

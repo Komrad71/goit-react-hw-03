@@ -1,0 +1,31 @@
+.feedcontainer {
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 400px;
+  background-color: yellow;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.feedlist {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.feeditem {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.feeditem:last-child {
+  margin-bottom: 0;
+  font-weight: bold;
+  color: #2c7a7b; /* Цвет для выделения последнего пункта */
+}
