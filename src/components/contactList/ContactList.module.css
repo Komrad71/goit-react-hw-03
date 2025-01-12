@@ -1,9 +1,7 @@
-.message {
-  text-align: center;
-  font-weight: 300;
-  font-size: 20px;
-  line-height: 1.5;
-  letter-spacing: 0.03em;
-  color: black;
-
+.contactList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px
 }

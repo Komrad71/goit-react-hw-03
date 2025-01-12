@@ -1,31 +1,53 @@
-.feedcontainer {
-  margin: 20px auto;
-  padding: 20px;
-  max-width: 400px;
-  background-color: yellow;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.feedlist {
+.contactFormWrapper {
   display: flex;
-  justify-content:center;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
-  list-style: none;
-  padding: 0;
-  margin: 0;
+  gap: 16px;
+  border-radius: 10px;
+
 }
 
-.feeditem {
-  font-size: 16px;
-  color: #333;
-  margin-bottom: 10px;
+.contactFormWrapperField {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  gap: 8px;
+
+}
+.contactForm {
+margin: 0 auto;
+  border-radius: 8px;
+  padding: 16px;
+  width: 320px;
+  height: 60px;
+  background-color: rgb(48, 46, 46);
+  border: 1px solid black;
+
 }
 
-.feeditem:last-child {
-  margin-bottom: 0;
-  font-weight: bold;
-  color: #2c7a7b; /* Цвет для выделения последнего пункта */
+
+
+.contactForm:focus {
+  outline: none;
+  border: none;
+}
+
+
+
+
+.contactFormBtn {
+  border-radius: 8px;
+padding: 6px 12px;
+min-width: 150px;
+height: 40px;
+background: #c57314;
+border: none;
+color: whitesmoke;
+margin-bottom: 20px;
+}
+
+.contactFormBtn:hover {
+  background: #915700;
+
 }

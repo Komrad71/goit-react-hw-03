@@ -1,24 +1,25 @@
-.optionsList {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
+.searchInput {
+  width: 320px;
+  padding: 5px 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  outline: none;
+  transition: border 250ms ease-in-out;
+  text-align: center;
   margin-bottom: 20px;
+  display: block;
+  margin: 0 auto 20px;
+  background-color: rgb(48, 46, 46);
 }
 
-.optionsBtn {
-  font-size: 16px;
-  border: none;
-  background-color: orange;
-  color: black;
-  width: 80px;
-  height: 40px;
-  border-radius: 7px;
-  cursor: pointer;
-  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.searchInput:focus {
+  border: 1px solid black;
 }
 
-.optionsBtn:hover {
-  color: #fff;
-  background: rgb(9, 126, 54);
+.searchInput::placeholder {
+  transition: color 250ms ease-in-out;
+}
+
+.searchInput:focus::placeholder {
+  color: green;
 }

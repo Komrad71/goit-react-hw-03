@@ -1,20 +1,19 @@
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
-import { nanoid } from 'nanoid';
-import css from './ContactForm.module.css'
+import css from './ContactForm.module.css';
 
 const ContactForm = ({ onAddContact }) => {
   const initialValues = { name: '', number: '' };
   const validationSchema = Yup.object({
     name: Yup.string()
-    .min(3, "min 3 characters")
-    .max(50, "max 50 characters")
-    .required('Name is required'),
+      .min(3, "min 3 characters")
+      .max(50, "max 50 characters")
+      .required('Name is required'),
     number: Yup.number().required('Number is required'),
   });
 
   const handleSubmit = (values, { resetForm }) => {
-    onAddContact({ id: nanoid(), ...values });
+    onAddContact(values);
     resetForm();
   };
 

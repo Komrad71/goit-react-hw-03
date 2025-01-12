@@ -7,11 +7,11 @@ const Contact = ({ contact, onDelete }) => {
     <div className={css.contact}>
       <div className={css.contactContainer}>
         <div className={css.contactWrapper}>
-          <FaPhoneAlt color="#007bhf" />
+          <FaPhoneAlt color="black" />
           <p className={css.contactText}>{contact.name}</p>
         </div>
         <div className={css.contactWrapper}>
-          <FaUserAlt color="#007bhf" />
+          <FaUserAlt color="blue" />
           <p className={css.contactText}> {contact.number}</p>
         </div>
       </div>
