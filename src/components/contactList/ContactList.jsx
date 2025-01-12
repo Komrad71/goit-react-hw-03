@@ -1,4 +1,4 @@
-import Contact from "./contact/Contact";
+import Contact from "../contact/Contact";
 import css from './ContactList.module.css'
 const ContactList = ({ contacts, onDeleteContact }) => {
 	return (
@@ -7,7 +7,7 @@ const ContactList = ({ contacts, onDeleteContact }) => {
 				return (
 					<li key={item.id}>
 						<Contact
-							contactName={item.name}
+							contact={item.name}
 							number={item.number}
 							id={item.id}
 							onDeleteContact={onDeleteContact}
@@ -20,3 +20,5 @@ const ContactList = ({ contacts, onDeleteContact }) => {
 };
 
 export default ContactList;
+
+
