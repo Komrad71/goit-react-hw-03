@@ -26,15 +26,10 @@ margin: 0 auto;
 
 }
 
-
-
 .contactForm:focus {
   outline: none;
   border: none;
 }
-
-
-
 
 .contactFormBtn {
   border-radius: 8px;

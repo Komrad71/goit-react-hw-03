@@ -1,4 +1,3 @@
-// Исправленный компонент App:
 import { useEffect, useState } from "react";
 import { nanoid } from "nanoid";
 import css from "./App.module.css";
